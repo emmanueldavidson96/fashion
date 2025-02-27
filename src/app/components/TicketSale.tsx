@@ -66,7 +66,7 @@ export default function TicketSale() {
             whileInView={"show"}
             viewport={{once:false, amount:0.3}} 
             onClick={() => router.push("/reserve-a-seat")}
-            className='border-2 border-green-500 text-white tracking-widest w-fit h-fit px-16 py-8 rounded-3xl font-semibold hover:bg-green-500 transition-all duration-500'>Reserve a Seat</motion.button>
+            className='border-2 border-green-500 text-white mt-10 tracking-widest w-fit h-fit px-16 py-8 rounded-3xl font-semibold hover:bg-green-500 transition-all duration-500'>Reserve a Seat</motion.button>
 
     </div>
   )
