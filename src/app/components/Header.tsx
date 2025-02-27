@@ -249,12 +249,7 @@ function Header() {
                 
 
                 <Link className='flex gap-4 items-center bg-black w-fit px-6 py-3' href={"https://www.eventbrite.co.uk/o/africa-fashion-week-london-8259623456"}>
-                    <motion.button 
-                        variants={fadeIn("up", 0.2)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{once:false, amount:0.3}} 
-                        className='text-white text-sm hover:text-green-500'>Buy AFWN2025 Tickets</motion.button>
+                    <button onClick={() => router.push("/reserve-a-seat")} className='text-white text-sm hover:text-green-500'>Buy AFWN2025 Tickets</button>
                 </Link>
             </div>
         )
