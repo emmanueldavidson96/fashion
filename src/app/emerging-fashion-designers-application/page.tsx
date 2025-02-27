@@ -96,7 +96,7 @@ export default function page() {
         <Header />
 
         <div className='h-[400px]  w-full bg-black flex gap-5 flex-col items-center justify-center'>
-            <h2 className='text-2xl text-center w-[90%] mx-auto lg:text-2xl font-extrabold uppercase text-white mt-8'>Emerging Fashion Designers</h2>
+            <h2 className='text-2xl text-center w-[90%] mx-auto lg:text-4xl font-extrabold uppercase text-white mt-8'>Emerging Fashion Designers</h2>
             <hr className='w-[20%] h-1 bg-green-500 '/>
         </div>
         

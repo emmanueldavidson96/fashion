@@ -80,7 +80,7 @@ function Header() {
 
                         <div className='w-[50%] flex-col flex gap-5'>
                             <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/agency-form"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/agency-form")}>Agency Form</p>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/reserve-a-seat"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/reserve-a-seat")}>Reserve a Seat</p>
+                            {/* <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/reserve-a-seat"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/reserve-a-seat")}>Reserve a Seat</p> */}
                             <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/volunteer-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/volunteer-application")}>Volunteer Application</p>
                             <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/afwn-summit"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/afwn-summit")}>AFWN Summit</p>
                         </div>
@@ -215,9 +215,9 @@ function Header() {
                         <Link href={"/agency-form"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Agency <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
-                        <Link href={"/reserve-a-seat"}>
+                        {/* <Link href={"/reserve-a-seat"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Reserve A Seat <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
-                        </Link>
+                        </Link> */}
                         <Link href={"/volunteer-application"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Volunteer Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
