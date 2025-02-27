@@ -250,7 +250,7 @@ function Header() {
 
                 <Link className='flex gap-4 items-center bg-black w-fit px-6 py-3' href={"https://www.eventbrite.co.uk/o/africa-fashion-week-london-8259623456"}>
                     <motion.button 
-                        variants={fadeIn("up", 0.6)}
+                        variants={fadeIn("up", 0.2)}
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{once:false, amount:0.3}} 
