@@ -248,9 +248,10 @@ function Header() {
                 </motion.div>
                 
 
-                <Link className='flex gap-4 items-center bg-black w-fit px-6 py-3' href={"https://www.eventbrite.co.uk/o/africa-fashion-week-london-8259623456"}>
-                    <button onClick={() => router.push("/reserve-a-seat")} className='text-white text-sm hover:text-green-500'>Buy AFWN2025 Tickets</button>
-                </Link>
+                <p className='flex gap-4 items-center bg-black w-fit px-6 py-3'>
+                    <button onClick={() => router.push("/reserve-a-seat")} className='text-white text-sm hover:text-green-500'>Reserve a seat</button>
+                </p>
+                
             </div>
         )
       }
