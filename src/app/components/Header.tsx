@@ -41,8 +41,8 @@ function Header() {
     <header
       className={`w-screen flex justify-between items-center fixed top-0 left-0 z-50 px-4 md:px-12 lg:px-16 transition-all duration-500 ${
         scrolled
-          ? "h-[120px] md:h-[100px] bg-black"
-          : "h-[140px] md:h-[120px] bg-black"
+          ? "h-[110px] md:h-[100px] bg-black"
+          : "h-[120px] md:h-[120px] bg-black"
       }`}
     >
         <div className='flex lg:hidden'>

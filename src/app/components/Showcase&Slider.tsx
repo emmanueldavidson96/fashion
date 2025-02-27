@@ -157,16 +157,16 @@ export default function ShowcaseSlider() {
                                
                 <IoCloseCircle size={40} className='cursor text-green-500 pointer absolute top-2 right-2 cursor-pointer' onClick={() => setImgPop(!imgPop)}/>                
                 
-                <div className="bg-green-500 max-lg:absolute max-lg:left-2 max-lg:bottom-[45%]  ml-2 rounded-full hover:translate-x-3 transition-all ease-linear cursor-pointer p-4" onClick={() => swipeImg("prv")}>
-                    <MdArrowBackIos size={30} className='cursor-pointer text-white '/>
+                <div className="bg-green-500 max-lg:absolute max-lg:left-2 max-lg:bottom-[45%]  ml-2 rounded-full hover:translate-x-3 transition-all ease-linear cursor-pointer p-2" onClick={() => swipeImg("prv")}>
+                    <MdArrowBackIos size={20} className='cursor-pointer text-white '/>
                 </div>
                 <img 
                     src={gallery[selectedImg].img}
                     alt={""}
                     className='lg:max-w-[600px] w-full h-auto'
                 /> 
-                <div className="bg-green-500 rounded-full mr-2 max-lg:absolute max-lg:right-2 max-lg:bottom-[45%] hover:-translate-x-3 transition-all ease-linear cursor-pointer p-4" onClick={() => swipeImg("nxt")}>
-                    <MdArrowForwardIos size={30} className='cursor-pointer text-white'/>
+                <div className="bg-green-500 rounded-full mr-2 max-lg:absolute max-lg:right-2 max-lg:bottom-[45%] hover:-translate-x-3 transition-all ease-linear cursor-pointer p-2" onClick={() => swipeImg("nxt")}>
+                    <MdArrowForwardIos size={20} className='cursor-pointer text-white'/>
                 </div>
             </div>
             
