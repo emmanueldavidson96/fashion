@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { base_afwn_reserve_seat } from '../../../api/base';
 import { toast } from 'react-toastify';
+import { base_afwn_model } from '../../../api/base';
 
 const images = [
     {
@@ -69,25 +69,24 @@ const images = [
 
 ]
 export default function page() {
-    
+
     const [Name, setName] = useState("");
-    const [Gender, setGender] = useState("");
-    const [Email, setEmail]= useState("");
-    const [PhoneNumber, setPhoneNumber] = useState("");
-    const [Day1CatwalkxDesignersCompetition, setDay1CatwalkxDesignersCompetition] = useState("");  
-    const [Day2CatwalkxExhibition, setDay2CatwalkxExhibition] = useState("");  
-    const [Day3CatwalkxExhibition, setDay3CatwalkxExhibition] = useState("");  
+    const [Phone, setPhone] = useState("");
+    const [EmailAddress, setEmailAddress]= useState("");
+    const [Sex, setSex] = useState("");
+    const [InstagramHandle, setInstagramHandle] = useState("");
+    
 
     const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        base_afwn_reserve_seat("ReserveASeat").create({
-            Name, Gender, Email, PhoneNumber, Day1CatwalkxDesignersCompetition, Day2CatwalkxExhibition, Day3CatwalkxExhibition
+        base_afwn_model("Models").create({
+            Name, Phone, EmailAddress, Sex, InstagramHandle
         }, function (err:unknown, _record:any){
             if(err){
                 console.log(err);
                 return
             }
-            toast("Form submitted successfully!");
+            toast("Form submitted successfully!")
         })
     }
 
@@ -95,7 +94,7 @@ export default function page() {
     <div className=''>
         <Header />
         <div className='h-[400px] w-full bg-black flex gap-5 flex-col items-center justify-center'>
-            <h2 className='text-2xl text-center w-[90%] mx-auto lg:text-4xl font-extrabold uppercase text-white mt-8'>Reserve a Seat</h2>
+            <h2 className='text-2xl text-center w-[90%] mx-auto lg:text-4xl font-extrabold uppercase text-white mt-8'>Designer & Exhibitors </h2>
             <hr className='w-[20%] h-1 bg-green-500 '/>
         </div>
         
@@ -105,43 +104,19 @@ export default function page() {
                 
                 <div className='lg:w-[48%] w-full  flex flex-col gap-4'>
                     <form className='w-full mx-auto flex flex-col gap-6' onSubmit={handle_submit}>
-                        <label className='text-2xl lg:text-4xl text-black font-bold uppercase'>Reserve a Seat Form</label>
-                        <input type="text" name="" id="" className='w-full px-6 py-3 border-b text-black border-green-500' 
-                            placeholder='Name' 
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                        <label htmlFor="" className='text-black font-semibold'>Gender</label>
-                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setGender(e.target.value)}>
+                        <label className='text-2xl lg:text-4xl text-black font-bold uppercase'>Designer & Exhibitors Form</label>
+                        <input type="text" name="" id="" className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Full Names' onChange={(e) => setName(e.target.value)} />
+                        <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Phone' onChange={(e) => setPhone(e.target.value)}/>
+                        <input type="email" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Email Address' onChange={(e) => setEmailAddress(e.target.value)}/>
+                        
+                        <label htmlFor="" className='text-black font-semibold'>Sex</label>
+                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setSex(e.target.value)}>
                             <option value=""></option>
                             <option value="Male">Male</option>
-                            <option value="Female">Female</option>                        
+                            <option value="Female">Female</option>
                         </select>
-                        <input type="email" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500' placeholder='Email'
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500' 
-                            placeholder='Phone Number'
-                            onChange={(e) => setPhoneNumber(e.target.value)}
-                        />
-                        <label htmlFor="" className='text-black font-semibold text-xl'>Days to Attend</label>                     
-                        <label htmlFor="" className='text-black font-semibold'>Day 1 (Catwalk x Designers Competition)*</label>
-                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay1CatwalkxDesignersCompetition(e.target.value)}>
-                            <option value=""></option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>                            
-                        </select>
-                        <label htmlFor="" className='text-black font-semibold'>Day 2 (Catwalk x Exhibition)*</label>
-                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay2CatwalkxExhibition(e.target.value)}>
-                            <option value=""></option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>                            
-                        </select>
-                        <label htmlFor="" className='text-black font-semibold'>Day 3 (Catwalk x Exhibition Competition)*</label>
-                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay3CatwalkxExhibition(e.target.value)}>
-                            <option value=""></option>
-                            <option value="Catwalk">Catwalk</option>
-                            <option value="Exhibition">Exhibition</option>                            
-                        </select>
+
+                        <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Instagram Handle' onChange={(e) => setInstagramHandle(e.target.value)}/>                        
                         
                         <button type='submit' className='hover:bg-green-600 duration-500 transition-all w-[100%] h-[60px] bg-green-500 rounded-3xl text-white font-semibold tracking-widest text-xl'>
                             Submit
@@ -161,15 +136,13 @@ export default function page() {
                                 />
                             )
                         })
-                    }                   
+                    }                    
+                    
                 </div>
 
             </div>
-
         </div>
-
         <Footer />
-
     </div>
   )
 }

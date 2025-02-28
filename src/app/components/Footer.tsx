@@ -4,6 +4,7 @@ import React from 'react'
 import logoImage from "../../../public/assets/AFWN - white.png";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../lib/variants';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -27,8 +28,8 @@ export default function Footer() {
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 w-[45%] max-md:w-full h-full'>
                 <h3 className='lg:text-4xl text-lg uppercase font-extrabold text-white'>STAY UPDATED, JOIN OUR MAILING LIST</h3>
-                <p className='max-lg:text-sm'>Sign up to be the first to find out when we add new events and share African Fashion Week Nigeria news and more.</p>
-                <p className='max-lg:text-sm'>We respect your privacy and will never share your information with third-party vendors.</p>
+                <p className='max-lg:text-sm text-white'>Sign up to be the first to find out when we add new events and share African Fashion Week Nigeria news and more.</p>
+                <p className='max-lg:text-sm text-white'>We respect your privacy and will never share your information with third-party vendors.</p>
             </motion.div>
 
             <div className='flex items-center justify-end w-[45%] max-md:w-full h-full'>
@@ -48,9 +49,9 @@ export default function Footer() {
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 max-md:w-full'>
                 <h3 className='md:text-4xl text-xl uppercase text-white font-bold'>Support</h3>
-                <p className='d:text-base text-sm'>Terms and Conditions</p>
-                <p className='d:text-base text-sm'>Privacy Policy</p>
-                <p className='d:text-base text-sm'>FAQs</p>
+                <p className='d:text-base text-sm text-white'>Terms and Conditions</p>
+                <p className='d:text-base text-sm text-white'>Privacy Policy</p>
+                <p className='d:text-base text-sm text-white'>FAQs</p>
             </motion.div>
 
             <motion.div 
@@ -64,7 +65,7 @@ export default function Footer() {
                     alt=''
                     className='lg:w-[150px] w-[80px] h-auto bg-cover '
                 />
-                <h2 className='uppercase font-bold text-base lg:text-3xl'>African Fashion Week Nigeria</h2>
+                <h2 className='uppercase font-bold text-base lg:text-3xl text-white'>African Fashion Week Nigeria</h2>
             </motion.div>
 
             
@@ -75,9 +76,9 @@ export default function Footer() {
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 max-md:w-full' >
                 <h3 className='md:text-4xl text-xl uppercase text-white font-bold'>Contact</h3>
-                <p className='d:text-base text-sm'>Contact Us</p>
-                <p className='d:text-base text-sm'>Press </p>
-                <p className='d:text-base text-sm'>Registrations</p>
+                <Link href={"/contact-us"} className='d:text-base text-sm text-white cursor-pointer'>Contact Us</Link>
+                <Link href={"/press-media-pass"} className='d:text-base text-sm text-white cursor-pointer' >Press </Link>
+                
             </motion.div>
 
            

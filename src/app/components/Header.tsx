@@ -41,8 +41,8 @@ function Header() {
     <header
       className={`w-screen flex justify-between items-center fixed top-0 left-0 z-50 px-4 md:px-12 lg:px-16 transition-all duration-500 ${
         scrolled
-          ? "h-[110px] md:h-[100px] bg-black"
-          : "h-[120px] md:h-[120px] bg-black"
+          ? "h-[125px] md:h-[100px] bg-black"
+          : "h-[140px] md:h-[120px] bg-black"
       }`}
     >
         <div className='flex lg:hidden'>
@@ -72,17 +72,17 @@ function Header() {
                 <h3 onMouseEnter={() => setApplyHovered(true)} onMouseLeave={() => setApplyHovered(false)} className={`uppercase cursor-pointer lg:text-xs py-5 flex items-center gap-2 relative text-sm tracking-wider transition-all duration-300 hover:text-[#32de84] ${pathName === "/team"? "text-[#32de84]":""}`}>Apply <IoMdArrowDropdown size={25} className="text-white"/>
                     <div className={`gap-4 w-[500px] h-fit px-6 py-6 rounded-md absolute top-[60px] bg-black ${applyHovered ? "flex": "hidden"}`}>
                         <div className='w-[50%] flex-col flex gap-5'>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/emerging-fashion-designers-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/emerging-fashion-designers-application")}>Emerging Fashion Designers Application</p>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/models-casting-form"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/models-casting-form")}>Models Casting Form</p>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/partnership-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/partnership-application")}>Partnership</p>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/press-media-pass"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/press-media-pass")}>Press & Media Pass</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/register-to-attend"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/register-to-attend")}>Register to Attend</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/designer-exhibitor-form"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/designer-exhibitor-form")}>Designer/Exhibitor Application</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/emerging-fashion-designers-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/emerging-fashion-designers-application")}>Emerging Designers Application</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/partnership-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/partnership-application")}>Sponsorship/Partnership Application</p>
                         </div>
 
                         <div className='w-[50%] flex-col flex gap-5'>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/agency-form"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/agency-form")}>Agency Form</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/press-media-pass"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/press-media-pass")}>Press Accreditation</p>
                             {/* <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/reserve-a-seat"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/reserve-a-seat")}>Reserve a Seat</p> */}
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/volunteer-application"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/volunteer-application")}>Volunteer Application</p>
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/afwn-summit"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/afwn-summit")}>AFWN Summit</p>
+                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/contact-us"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/contact-us")}>Contact Us</p>
+                            {/* <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/afwn-summit"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/afwn-summit")}>AFWN Summit</p> */}
                         </div>
 
                     </div>  
@@ -200,30 +200,30 @@ function Header() {
                             Back
                         </p>
                         
-                        <Link href={"/emerging-fashion-designers-application"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-4 items-center'>Emerging-fashion-designers-application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                        <Link href={"/register-to-attend"}>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Register to Attend <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
-                        <Link href={"/models-casting-form"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Models Casting Form <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                        <Link href={"/designer-exhibitor-form"}>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Designer/Exhibitor Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                        </Link>
+                        <Link href={"/emerging-fashion-designers-application"}>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-4 items-center'>Emerging Designers Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/partnership-application"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Partnership <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Sponsorship/Partnership Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/press-media-pass"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Press & Media Pass <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Press Accreditation <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
-                        <Link href={"/agency-form"}>
+                        {/* <Link href={"/agency-form"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Agency <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
-                        </Link>
-                        {/* <Link href={"/reserve-a-seat"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Reserve A Seat <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link> */}
-                        <Link href={"/volunteer-application"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Volunteer Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                        <Link href={"/contact-us"}>
+                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
-                        <Link href={"/afwn-summit"}>
+                        {/* <Link href={"/afwn-summit"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>AFWN Summit <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
-                        </Link>                        
+                        </Link>                         */}
                     </div>
                 }
 
@@ -251,7 +251,7 @@ function Header() {
                 <p className='flex gap-4 items-center bg-black w-fit px-6 py-3'>
                     <button onClick={() => router.push("/reserve-a-seat")} className='text-white text-sm hover:text-green-500'>Reserve a seat</button>
                 </p>
-                
+
             </div>
         )
       }
