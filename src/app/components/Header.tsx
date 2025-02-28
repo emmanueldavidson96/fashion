@@ -68,6 +68,16 @@ function Header() {
             <motion.div
                 whileHover={{ scale: 1.1, textShadow: "0px 0px 10px rgba(255,255,255,0.8)" }}
                 transition={{ duration: 0.3 }}
+                >
+                <h3 
+                    className={`uppercase cursor-pointer lg:text-xs py-5 flex items-center gap-2 relative text-sm tracking-wider transition-all duration-300 hover:text-[#32de84]`}>
+                        Blog 
+                </h3>
+            </motion.div> 
+
+            <motion.div
+                whileHover={{ scale: 1.1, textShadow: "0px 0px 10px rgba(255,255,255,0.8)" }}
+                transition={{ duration: 0.3 }}
             >
                 <h3 onMouseEnter={() => setApplyHovered(true)} onMouseLeave={() => setApplyHovered(false)} className={`uppercase cursor-pointer lg:text-xs py-5 flex items-center gap-2 relative text-sm tracking-wider transition-all duration-300 hover:text-[#32de84] ${pathName === "/team"? "text-[#32de84]":""}`}>Apply <IoMdArrowDropdown size={25} className="text-white"/>
                     <div className={`gap-4 w-[500px] h-fit px-6 py-6 rounded-md absolute top-[60px] bg-black ${applyHovered ? "flex": "hidden"}`}>
@@ -81,7 +91,6 @@ function Header() {
                         <div className='w-[50%] flex-col flex gap-5'>
                             <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/press-media-pass"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/press-media-pass")}>Press Accreditation</p>
                             {/* <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/reserve-a-seat"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/reserve-a-seat")}>Reserve a Seat</p> */}
-                            <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/contact-us"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/contact-us")}>Contact Us</p>
                             {/* <p className={`lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer ${pathName === "/afwn-summit"? "text-[#32de84]":"text-white"}`} onClick={() => router.push("/afwn-summit")}>AFWN Summit</p> */}
                         </div>
 
@@ -99,7 +108,11 @@ function Header() {
                         {/* <p className="text-white lg:text-xs text-sm uppercase hover:text-green-500 duration-500 cursor-pointer">AFWN 2023 Gallery</p> */}
                     </div>  
                 </h3>
-            </motion.div>            
+            </motion.div> 
+
+            <Link href={"/contact-us"}>
+                <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+            </Link>           
         </nav>
 
         <Link href={"/"} className='w-fit h-fit'>
@@ -170,13 +183,6 @@ function Header() {
                     normalNav && 
                     <div className='flex flex-col gap-10'>
                         <motion.p 
-                            variants={fadeIn("up", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{once:false, amount:0.3}} 
-                            onClick={() => router.push("/about-us")}
-                            className='text-5xl cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
-                        <motion.p 
                             variants={fadeIn("up", 0.4)}
                             initial="hidden"
                             whileInView={"show"}
@@ -187,8 +193,28 @@ function Header() {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
+                            className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog </motion.p>
+                        <motion.p 
+                            variants={fadeIn("up", 0.6)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/afwn-2024-gallery")}
                             className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Gallery <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                        <motion.p 
+                            variants={fadeIn("up", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.3}} 
+                            onClick={() => router.push("/about-us")}
+                            className='text-5xl cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                        <motion.p 
+                            variants={fadeIn("up", 0.6)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{once:false, amount:0.3}} 
+                            onClick={() => router.push("/contact-us")}
+                            className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us </motion.p>
                     </div>
                 }
                 {
@@ -218,9 +244,7 @@ function Header() {
                         {/* <Link href={"/agency-form"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Agency <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link> */}
-                        <Link href={"/contact-us"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
-                        </Link>
+                        
                         {/* <Link href={"/afwn-summit"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>AFWN Summit <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>                         */}
@@ -249,7 +273,7 @@ function Header() {
                 
 
                 <p className='flex gap-4 items-center bg-black w-fit px-6 py-3'>
-                    <button onClick={() => router.push("/reserve-a-seat")} className='text-white text-sm hover:text-green-500'>Reserve a seat</button>
+                    <button onClick={() => router.push("/register-to-attend")} className='text-white text-sm hover:text-green-500'>Register to Attend</button>
                 </p>
 
             </div>
