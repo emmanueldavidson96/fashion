@@ -39,6 +39,7 @@ export default function page() {
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740827950/773034387_i8wfyt.jpg'
                         className='w-[50%] max-lg:w-full h-auto'
                     />
+                    
                     <h2 className='text-lg font-semibold text-black'>Adire in Contemporary African Fashion</h2>
                     
                     <p className='text-black text-base'>

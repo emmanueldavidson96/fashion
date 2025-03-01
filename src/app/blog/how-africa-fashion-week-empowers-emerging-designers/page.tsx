@@ -68,7 +68,7 @@ export default function page() {
                     Through its efforts, AFW is positioning African fashion as a key player in the global fashion scene, proving that 
                     creativity and innovation from the continent are second to none.
                     </p>
-                    <p>
+                    <p className='text-black text-base'>
                     Stay tuned to Africa Fashion Week to discover how we're empowering emerging designers and shaping the future of fashion in Africa and beyond.
                     </p>
 

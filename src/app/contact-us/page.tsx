@@ -29,29 +29,29 @@ export default function page() {
             <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Last Name' />
             <input type="email" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Email' />
             <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Phone' />
-            <textarea className='text-white w-full border-b border-white bg-transparent p-3 h-[150px] max-lg:h-[100px] max-lg:p-2' placeholder='Comment' />
+            <textarea className='text-white w-full border-b border-white bg-transparent p-3 h-[150px] max-lg:h-[80px] max-lg:p-2' placeholder='Comment' />
             <button className='text-white bg-green-500 px-8 py-3 rounded-xl mt-8 max-lg:mt-4' type='submit'>Submit</button>
 
           </form>   
           {/* Title Section */}
-          <div className='flex flex-col gap-4 max-lg:gap-2 w-[45%] max-lg:w-full'>
+          <div className='flex flex-col gap-4 max-lg:gap-1 w-[45%] max-lg:w-full '>
             
             <div className='flex gap-4 max-lg:gap-2 items-center'>
               <MdQuestionAnswer 
-                size={40}
+                size={30}
                 className='text-green-500 '
               />
 
-              <p className='text-white text-xl'>info@africafashionweeknigeria.com</p>
+              <p className='text-white text-xl max-lg:text-sm'>info@africafashionweeknigeria.com</p>
             </div>
 
             <div className='flex gap-4 items-center'>
               <IoIosContacts 
-                size={40}
+                size={30}
                 className='text-green-500'
               />
 
-              <p className='text-white xl'>07088800866</p>
+              <p className='text-white text-xl max-lg:text-sm'>07088800866</p>
             </div>
             <h3 className='text-white text-lg mt-8 max-lg:mt-3 max-lg:text-sm' >Simply send us an email anytime you want. We are open to all suggestions, ideas and partnerships from all.</h3>
           </div> 
