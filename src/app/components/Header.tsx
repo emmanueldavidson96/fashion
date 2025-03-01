@@ -70,7 +70,8 @@ function Header() {
                 transition={{ duration: 0.3 }}
                 >
                 <h3 
-                    className={`uppercase cursor-pointer lg:text-xs py-5 flex items-center gap-2 relative text-sm tracking-wider transition-all duration-300 hover:text-[#32de84]`}>
+                    onClick={() => router.push("/blog")}
+                    className={`uppercase cursor-pointer lg:text-xs py-5 flex items-center gap-2 relative text-sm tracking-wider transition-all duration-300 hover:text-[#32de84] ${pathName === "/blog" ? "text-green-500" : "text-white"}`}>
                         Blog 
                 </h3>
             </motion.div> 
@@ -121,7 +122,7 @@ function Header() {
                 initial="visible"
                 whileInView={"show"}
                 viewport={{once:false, amount:0.3}}
-                className="text-2xl max-lg:w-[320px] max-lg:text-center md:text-3xl text-white font-black uppercase tracking-wider">Africa Fashion Week Nigeria</motion.h1>
+                className="text-2xl max-lg:w-[320px] max-lg:text-center lg:ml-[-150px] md:text-3xl text-white font-black uppercase tracking-wider">Africa Fashion Week Nigeria</motion.h1>
         </Link>   
 
         {/* Right Navigation */}
@@ -193,6 +194,7 @@ function Header() {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
+                            onClick={() => router.push("/blog")}
                             className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog </motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
