@@ -188,35 +188,35 @@ function Header() {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
-                            className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' onClick={() => {setApplyNav(!applyNav); setNormalNav(false)}}>Apply <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-xl text-black cursor-pointer font-light flex gap-8 items-center' onClick={() => {setApplyNav(!applyNav); setNormalNav(false)}}>Apply <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/blog")}
-                            className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/afwn-2024-gallery")}
-                            className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Gallery <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-xl text-black font-light flex cursor-pointer gap-8 items-center'>Gallery <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/about-us")}
-                            className='text-5xl cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-xl cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/contact-us")}
-                            className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                     </div>
                 }
                 {
@@ -229,19 +229,19 @@ function Header() {
                         </p>
                         
                         <Link href={"/register-to-attend"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Register to Attend <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Register to Attend <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/designer-exhibitor-form"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Designer/Exhibitor Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Designer/Exhibitor Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/emerging-fashion-designers-application"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-4 items-center'>Emerging Designers Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-4 items-center'>Emerging Designers Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/partnership-application"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Sponsorship/Partnership Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Sponsorship/Partnership Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         <Link href={"/press-media-pass"}>
-                            <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Press Accreditation <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Press Accreditation <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
                         </Link>
                         {/* <Link href={"/agency-form"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Agency <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
