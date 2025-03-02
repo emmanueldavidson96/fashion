@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { toast } from 'react-toastify';
-import { base_afwn_model } from '../../../api/base';
+import { base_afwn_designers } from '../../../api/base';
 
 const images = [
     {
@@ -71,16 +71,19 @@ const images = [
 export default function page() {
 
     const [Name, setName] = useState("");
-    const [Phone, setPhone] = useState("");
-    const [EmailAddress, setEmailAddress]= useState("");
-    const [Sex, setSex] = useState("");
-    const [InstagramHandle, setInstagramHandle] = useState("");
+    const [Email, setEmail] = useState("");
+    const [Officialtelephoneno, setOfficialtelephoneno]= useState("");
+    const [CommentMessage, setCommentMessage] = useState("");
+    const [WebsiteURL, setWebsiteURL] = useState("");
+    const [SocialMediahandlesFacebookTwitterInstagram, setSocialMediahandlesFacebookTwitterInstagram] = useState("");
+    const [IWewishtoapplyforthefollowing, setIWewishtoapplyforthefollowing] = useState("");
+    const [SelectDesignersCategories, setSelectDesignersCategories] = useState("");
     
 
     const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        base_afwn_model("Models").create({
-            Name, Phone, EmailAddress, Sex, InstagramHandle
+        base_afwn_designers("Designers").create({
+            Name, Email, Officialtelephoneno, CommentMessage, WebsiteURL, SocialMediahandlesFacebookTwitterInstagram, IWewishtoapplyforthefollowing, SelectDesignersCategories
         }, function (err:unknown, _record:any){
             if(err){
                 console.log(err);
@@ -105,18 +108,30 @@ export default function page() {
                 <div className='lg:w-[48%] w-full  flex flex-col gap-4'>
                     <form className='w-full mx-auto flex flex-col gap-6' onSubmit={handle_submit}>
                         <label className='text-2xl lg:text-4xl text-black font-bold uppercase'>Designer & Exhibitors Form</label>
-                        <input type="text" name="" id="" className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Full Names' onChange={(e) => setName(e.target.value)} />
-                        <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Phone' onChange={(e) => setPhone(e.target.value)}/>
-                        <input type="email" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Email Address' onChange={(e) => setEmailAddress(e.target.value)}/>
+                        <input type="text" name="" id="" className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                        <input type="email" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Phone' onChange={(e) => setOfficialtelephoneno(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setCommentMessage(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setWebsiteURL(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setSocialMediahandlesFacebookTwitterInstagram(e.target.value)}/>
                         
-                        <label htmlFor="" className='text-black font-semibold'>Sex</label>
-                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setSex(e.target.value)}>
+                        
+                        
+                        <label htmlFor="" className='text-black font-semibold'>I/We Wish to Apply for the following:</label>
+                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setIWewishtoapplyforthefollowing(e.target.value)}>
                             <option value=""></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
+                            <option value="Male">Catwalk</option>
+                            <option value="Female">Exhibition</option>
+                            <option value="Female">Both</option>
                         </select>
 
-                        <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Instagram Handle' onChange={(e) => setInstagramHandle(e.target.value)}/>                        
+                        <label htmlFor="" className='text-black font-semibold'>Select Designers Categories:</label>
+                        <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setSelectDesignersCategories(e.target.value)}>
+                            <option value=""></option>
+                            <option value="Emerging designers">Emerging Designers</option>
+                            <option value="Established designers">Established Designers</option>
+                            <option value="Exclusive designers">Exclusive designers</option>
+                        </select>                        
                         
                         <button type='submit' className='hover:bg-green-600 duration-500 transition-all w-[100%] h-[60px] bg-green-500 rounded-3xl text-white font-semibold tracking-widest text-xl'>
                             Submit

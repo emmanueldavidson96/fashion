@@ -31,7 +31,6 @@ export default function page() {
             <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Phone' />
             <textarea className='text-white w-full border-b border-white bg-transparent p-3 h-[150px] max-lg:h-[80px] max-lg:p-2' placeholder='Comment' />
             <button className='text-white bg-green-500 px-8 py-3 rounded-xl mt-8 max-lg:mt-4' type='submit'>Submit</button>
-
           </form>   
           {/* Title Section */}
           <div className='flex flex-col gap-4 max-lg:gap-1 w-[45%] max-lg:w-full '>
