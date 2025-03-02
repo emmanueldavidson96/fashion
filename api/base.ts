@@ -8,3 +8,4 @@ export const base_afwn_designers = new Airtable({apiKey:api_key}).base("apptqsZ3
 export const base_afwn_partnership = new Airtable({apiKey:api_key}).base("appvXZGF5yqRfpIJ6");
 export const base_afwn_press_media = new Airtable({apiKey:api_key}).base("appcLL4Ow7MPuMaO6");
 export const base_afwn_reserve_seat = new Airtable({apiKey:api_key}).base("appj45YR2AgbyYu4m");
+export const base_afwn_contacts = new Airtable({apiKey:api_key}).base("appayXLBnIapqXhOc");

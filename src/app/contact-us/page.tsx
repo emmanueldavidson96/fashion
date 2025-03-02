@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoIosContacts } from "react-icons/io";
 import { MdQuestionAnswer } from "react-icons/md";
 import Header from '../components/Header';
+import { base_afwn_contacts } from '../../../api/base';
+import { toast } from 'react-toastify';
 
 export default function page() {
+  const [Name, setBrandName] = useState("");
+  const [ContactEmailAddress, setContactEmailAddress] = useState("");
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [Yourinquiresorrequest, setYourinquiresorrequest] = useState("");
+  
+        
+
+    const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        base_afwn_contacts("Contacts").create({
+            Name, ContactEmailAddress, PhoneNumber, Yourinquiresorrequest
+        }, function (err:unknown, _record:any){
+            if(err){
+                console.log(err);
+                return
+            }
+            toast("Form submitted successfully!");
+        })
+    }
   return (
     <div className=''>
       <Header />
@@ -25,11 +46,10 @@ export default function page() {
         <div className="absolute bottom-[20%] max-lg:bottom-[5%] left-10 lg:left-[20%] text-left max-w-[80%] lg:max-w-[70%] flex max-lg:flex-col gap-12 items-start">
           <form className='flex flex-col gap-3 max-lg:gap-1 w-[50%] max-lg:w-full'>
             <label className='text-4xl max-lg:text-xl text-green-500 uppercase font-bold tracking-widest'>Contact Us</label>
-            <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='First Name' />
-            <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Last Name' />
-            <input type="email" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Email' />
-            <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Phone' />
-            <textarea className='text-white w-full border-b border-white bg-transparent p-3 h-[150px] max-lg:h-[80px] max-lg:p-2' placeholder='Comment' />
+            <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' onChange={(e) => setBrandName(e.target.value)} placeholder='Name' />            
+            <input type="email" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Email' onChange={(e) => setContactEmailAddress(e.target.value)} />
+            <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Phone' onChange={(e) => setPhoneNumber(e.target.value)}/>
+            <textarea className='text-white w-full border-b border-white bg-transparent p-3 h-[150px] max-lg:h-[80px] max-lg:p-2' placeholder='Comment' onChange={(e) => setYourinquiresorrequest(e.target.value)}/>
             <button className='text-white bg-green-500 px-8 py-3 rounded-xl mt-8 max-lg:mt-4' type='submit'>Submit</button>
           </form>   
           {/* Title Section */}
