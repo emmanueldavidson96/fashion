@@ -33,9 +33,9 @@ export default function Footer() {
             </motion.div>
 
             <div className='flex items-center justify-end w-[45%] max-md:w-full h-full'>
-                <div className='flex w-fit h-[65px]'>
-                    <input type="email" placeholder='Email Address' className='p-4 h-full w-[300px] text-black text-sm' />
-                    <button className='bg-green-500 text-sm text-white p-4 hover:bg-green-600 h-full transition-all duration-500'>Sign Up</button>
+                <div className='flex w-fit h-[60px]'>
+                    <input type="email" placeholder='Email Address' className='p-4 h-full w-[350px] text-black text-sm' />
+                    <button className='bg-green-500 text-sm text-white p-4 hover:bg-green-600 h-full transition-all duration-500 '>Sign Up</button>
                 </div>
             </div>
         </div>
