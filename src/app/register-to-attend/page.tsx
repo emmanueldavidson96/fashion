@@ -124,19 +124,19 @@ export default function page() {
                             onChange={(e) => setPhoneNumber(e.target.value)}
                         />
                         <label htmlFor="" className='text-black font-semibold text-xl'>Days to Attend</label>                     
-                        <label htmlFor="" className='text-black font-semibold'>Day 1 (Catwalk x Designers Competition)*</label>
+                        <label htmlFor="" className='text-black font-semibold'>Day 1 (Friday, December 12)*</label>
                         <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay1CatwalkxDesignersCompetition(e.target.value)}>
                             <option value=""></option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>                            
                         </select>
-                        <label htmlFor="" className='text-black font-semibold'>Day 2 (Catwalk x Exhibition)*</label>
+                        <label htmlFor="" className='text-black font-semibold'>Day 2 (Saturday, December 13)*</label>
                         <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay2CatwalkxExhibition(e.target.value)}>
                             <option value=""></option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>                            
                         </select>
-                        <label htmlFor="" className='text-black font-semibold'>Day 3 (Catwalk x Exhibition Competition)*</label>
+                        <label htmlFor="" className='text-black font-semibold'>Day 3 (Sunday, December 14)*</label>
                         <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setDay3CatwalkxExhibition(e.target.value)}>
                             <option value=""></option>
                             <option value="Catwalk">Catwalk</option>

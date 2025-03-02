@@ -195,7 +195,7 @@ function Header() {
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/blog")}
-                            className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog </motion.p>
+                            className='text-5xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
@@ -216,7 +216,7 @@ function Header() {
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/contact-us")}
-                            className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us </motion.p>
+                            className='text-5xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                     </div>
                 }
                 {

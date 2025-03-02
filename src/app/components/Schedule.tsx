@@ -23,7 +23,7 @@ export default function Schedule() {
                 className='flex flex-col gap-6 w-[30%] max-lg:w-full'>
                 <div className='w-full bg-black h-[250px] py-16 px-4 flex flex-col items-center justify-center gap-5 mb-8'>
                     <h2 className='text-6xl max-lg:text-3xl text-white font-bold'>12pm - 8pm </h2>
-                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Friday 08 November</p>
+                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Friday 12 December</p>
                 </div>
 
                 <p className='text-black text-xl font-semibold'>AFWN2025 Set Up</p>
@@ -38,7 +38,7 @@ export default function Schedule() {
                 className='flex flex-col gap-6 w-[30%] max-lg:w-full'>
                 <div className='w-full bg-black h-[250px] py-16 flex flex-col items-center justify-center gap-5 mb-8'>
                     <h2 className='text-6xl max-lg:text-3xl text-white font-bold'>12pm - 9pm </h2>
-                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Saturday 09 November</p>
+                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Saturday 13 December</p>
                 </div>
 
                 <p className='text-black text-xl font-semibold'>AFWN2025 Exhibitors</p>
@@ -56,7 +56,7 @@ export default function Schedule() {
                 className='flex flex-col gap-6 w-[30%] max-lg:w-full'>
                 <div className='w-full bg-black h-[250px] py-16 flex flex-col items-center justify-center gap-5 mb-8'>
                     <h2 className='text-6xl max-lg:text-3xl text-white font-bold'>12pm - 7pm </h2>
-                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Sunday 10 November</p>
+                    <p className='text-3xl max-lg:text-xl text-white font-semibold'>Sunday 14 December</p>
                 </div>
 
                 <p className='text-black text-xl font-semibold'>AFWN2025 Exhibitors</p>

@@ -30,6 +30,7 @@ export default function page() {
                             This collaboration, which includes Queen Ronke Ademiluyi-Ogunwusi's Adire Hub Nigeria, underscores the commitment to blending rich 
                             African cultural heritage with the innovation of British fashion education.
                         </p>
+                        <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                 </div>
 
@@ -50,6 +51,7 @@ export default function page() {
                         Recently, a group of students from Obafemi Awolowo University (OAU) 
                         approached Queen Ronke Ademiluyi-Ogunwusi with an exciting proposal: an internship program at the Adire Oodua Textile Hub.
                         </p>
+                        <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                 </div>
 
@@ -71,6 +73,7 @@ export default function page() {
                          creativity, and innovation. Originating from Nigeria, Adire—which means “tied and dyed” in Yoruba—is a centuries-old textile art that continues to captivate global audiences. Its bold patterns, vibrant colors, 
                         and intricate designs have transformed it from a traditional craft into a sought-after material in modern fashion.
                         </p>
+                        <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                 </div>
 
@@ -91,6 +94,7 @@ export default function page() {
                         Africa Fashion Week (AFW) is changing that narrative by serving as a powerful platform for African creative entrepreneurs 
                         and designers to showcase their talents on both local and global stages.
                         </p>
+                        <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                     
                 </div>
@@ -113,6 +117,7 @@ export default function page() {
                          Here are 10 must-know Nigerian 
                         textile innovations that are making waves in the global fashion industry
                         </p>
+                        <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                 </div>
 

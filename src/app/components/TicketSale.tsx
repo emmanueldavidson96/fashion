@@ -20,7 +20,7 @@ export default function TicketSale() {
             initial="hidden"
             whileInView={"show"}
             viewport={{once:false, amount:0.3}}
-            className='lg:text-3xl text-base text-center font-extrabold text-white'>Saturday 9th November - Sunday 10th November</motion.h3>
+            className='lg:text-3xl text-base text-center font-extrabold text-white'>Friday 12th December - Sunday 14th November</motion.h3>
         {/* <motion.h4 className='lg:text-3xl text-lg  font-extrabold mt-10'>Early Bird Ticket Sales </motion.h4> */}
         {/* <motion.h4 
             variants={fadeIn("up", 0.6)}

@@ -70,7 +70,7 @@ export default function page() {
                 className='text-green-500'
               />
 
-              <p className='text-white text-xl max-lg:text-sm'>07088800866</p>
+              <p className='text-white text-xl max-lg:text-sm'>designers@africafashionweeknigeria.com</p>
             </div>
             <h3 className='text-white text-lg mt-8 max-lg:mt-3 max-lg:text-sm' >Simply send us an email anytime you want. We are open to all suggestions, ideas and partnerships from all.</h3>
           </div> 
