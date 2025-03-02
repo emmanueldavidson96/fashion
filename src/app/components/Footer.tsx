@@ -19,7 +19,7 @@ export default function Footer() {
             className="absolute w-full h-full object-cover brightness-50"
         />
 
-        <div className='absolute top-[4%] left-[4%] w-[90%] mx-auto flex max-md:flex-col max-md:gap-6 justify-between py-8 border-b border-white h-[300px]'>
+        <div className='absolute top-[4%] left-[4%] w-[90%] mx-auto flex max-md:flex-col max-md:gap-6 justify-between py-8 border-b border-white h-[350px]'>
             
             <motion.div 
                 variants={fadeIn("up", 0.2)}
