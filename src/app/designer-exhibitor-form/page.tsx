@@ -69,7 +69,6 @@ const images = [
 
 ]
 export default function page() {
-
     const [Name, setName] = useState("");
     const [Email, setEmail] = useState("");
     const [Officialtelephoneno, setOfficialtelephoneno]= useState("");
@@ -79,7 +78,6 @@ export default function page() {
     const [IWewishtoapplyforthefollowing, setIWewishtoapplyforthefollowing] = useState("");
     const [SelectDesignersCategories, setSelectDesignersCategories] = useState("");
     
-
     const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         base_afwn_designers("Designers").create({
@@ -111,25 +109,25 @@ export default function page() {
                         <input type="text" name="" id="" className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Name' onChange={(e) => setName(e.target.value)} />
                         <input type="email" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Email' onChange={(e) => setEmail(e.target.value)}/>
                         <input type="text" name='' id='' className='w-full px-6 py-3 border-b text-black border-green-500 focus:outline-none ' placeholder='Phone' onChange={(e) => setOfficialtelephoneno(e.target.value)}/>
-                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setCommentMessage(e.target.value)}/>
-                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setWebsiteURL(e.target.value)}/>
-                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment' onChange={(e) => setSocialMediahandlesFacebookTwitterInstagram(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Comment Message' onChange={(e) => setCommentMessage(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Website URL' onChange={(e) => setWebsiteURL(e.target.value)}/>
+                        <input type="text" name='' id='' className='w-full px-6 py-3 text-black border-b border-green-500 focus:outline-none ' placeholder='Social Media Handles (Facebook, Twitter, Instagram etc.)' onChange={(e) => setSocialMediahandlesFacebookTwitterInstagram(e.target.value)}/>
                         
                         
                         
                         <label htmlFor="" className='text-black font-semibold'>I/We Wish to Apply for the following:</label>
                         <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setIWewishtoapplyforthefollowing(e.target.value)}>
                             <option value=""></option>
-                            <option value="Male">Catwalk</option>
-                            <option value="Female">Exhibition</option>
-                            <option value="Female">Both</option>
+                            <option value="Catwalk">Catwalk</option>
+                            <option value="Exhibition">Exhibition</option>
+                            <option value="Both">Both</option>
                         </select>
 
                         <label htmlFor="" className='text-black font-semibold'>Select Designers Categories:</label>
                         <select className='w-full px-6 py-3 text-black bg-gray-200' onChange={(e) => setSelectDesignersCategories(e.target.value)}>
                             <option value=""></option>
                             <option value="Emerging designers">Emerging Designers</option>
-                            <option value="Established designers">Established Designers</option>
+                            <option value="Established Designers">Established Designers</option>
                             <option value="Exclusive designers">Exclusive designers</option>
                         </select>                        
                         

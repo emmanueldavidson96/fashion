@@ -10,7 +10,7 @@ export default function page() {
     <div className='bg-black w-screen h-fit'>
         <Header />
         <div className='flex flex-col gap-5 py-24 h-fit lg:w-[70%] mx-auto mt-16 max-lg:px-6'>
-            <h2 className='text-white uppercase font-bold text-xl lg:text-5xl'>Blogs</h2>
+            <h2 className='text-white uppercase font-bold text-2xl lg:text-5xl'>Blogs</h2>
             <div className='mt-8 flex flex-col gap-8 '>
                 
                 <div 
