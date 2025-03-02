@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import { IoIosContacts } from "react-icons/io";
 import { MdQuestionAnswer } from "react-icons/md";
@@ -10,21 +11,20 @@ export default function page() {
   const [ContactEmailAddress, setContactEmailAddress] = useState("");
   const [PhoneNumber, setPhoneNumber] = useState("");
   const [Yourinquiresorrequest, setYourinquiresorrequest] = useState("");
-  
         
+  const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      base_afwn_contacts("Contacts").create({
+          Name, ContactEmailAddress, PhoneNumber, Yourinquiresorrequest
+      }, function (err:unknown, _record:any){
+          if(err){
+              console.log(err);
+              return
+          }
+          toast("Form submitted successfully!");
+      })
+  }
 
-    const handle_submit = (event:React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        base_afwn_contacts("Contacts").create({
-            Name, ContactEmailAddress, PhoneNumber, Yourinquiresorrequest
-        }, function (err:unknown, _record:any){
-            if(err){
-                console.log(err);
-                return
-            }
-            toast("Form submitted successfully!");
-        })
-    }
   return (
     <div className=''>
       <Header />
@@ -44,7 +44,7 @@ export default function page() {
 
         {/* Content Wrapper */}
         <div className="absolute bottom-[20%] max-lg:bottom-[5%] left-10 lg:left-[20%] text-left max-w-[80%] lg:max-w-[70%] flex max-lg:flex-col gap-12 items-start">
-          <form className='flex flex-col gap-3 max-lg:gap-1 w-[50%] max-lg:w-full'>
+          <form className='flex flex-col gap-3 max-lg:gap-1 w-[50%] max-lg:w-full' onSubmit={handle_submit}>
             <label className='text-4xl max-lg:text-xl text-green-500 uppercase font-bold tracking-widest'>Contact Us</label>
             <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' onChange={(e) => setBrandName(e.target.value)} placeholder='Name' />            
             <input type="email" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' placeholder='Email' onChange={(e) => setContactEmailAddress(e.target.value)} />
