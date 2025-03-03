@@ -43,7 +43,7 @@ export default function Announcements() {
           whileInView={"show"}
           viewport={{once:false, amount:0.3}}
           className='flex flex-col gap-8 w-full md:w-[48%] text-center md:text-left'>
-          <p className='text-sm tracking-widest leading-7 md:leading-8 text-white'>
+          <p className='text-sm tracking-widest leading-8 md:leading-10 text-white'>
             Africa Fashion Week Nigeria is the premier platform celebrating the vibrant world of African fashion. 
             As the largest global showcase of emerging African creatives, AFWN unites designers, models, 
             and fashion enthusiasts to highlight the richness of African heritage, 
@@ -51,7 +51,7 @@ export default function Announcements() {
             this event bridges tradition and modernity, putting African fashion on the global stage.
           </p>
           
-          <p className='text-sm tracking-widest leading-7 md:leading-8 text-white'>
+          <p className='text-sm tracking-widest leading-8 md:leading-10 text-white'>
             AFWN empowers the next generation of African talent through runway shows, exhibitions, and networking opportunities. 
             It&apos;s a space for emerging designers to shine and for industry leaders to discover the future of African fashion. 
             Join us in celebrating the creativity, diversity, 

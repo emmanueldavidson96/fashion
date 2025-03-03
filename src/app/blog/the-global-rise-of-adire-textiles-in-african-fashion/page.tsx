@@ -12,7 +12,7 @@ export default function page() {
                     src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740827950/773034387_i8wfyt.jpg'
                     className='w-screen h-auto bg-center'
                 />
-                <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 right-0 px-12 pt-36 absolute opacity-80 '>
+                <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 right-0 px-12 pt-36 absolute opacity-80 w-full'>
                     <h2 className='text-white text-5xl font-semibold capitalize max-lg:text-2xl'>The Global Rise of Adire Textiles in African Fashion</h2>
                     <p className='text-white text-lg tracking-widest'>March 1, 2025</p>                
                 </div>

@@ -12,7 +12,7 @@ export default function page() {
                     src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740828409/-1197161080_u4lrym.jpg'
                     className='w-screen h-auto'
                 />
-                <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 px-12 pt-36 absolute opacity-80 '>
+                <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 px-12 pt-36 absolute opacity-80 w-full'>
                     <h2 className='text-white text-5xl font-semibold capitalize max-lg:text-2xl'>10 Must-Know Nigerian Textile Innovations Changing Global Fashion</h2>
                     <p className='text-white text-lg tracking-widest'>March 1, 2025</p>                
                 </div>
