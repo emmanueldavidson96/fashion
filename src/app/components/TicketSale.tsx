@@ -13,6 +13,7 @@ export default function TicketSale() {
             initial="hidden"
             whileInView={"show"}
             viewport={{once:false, amount:0.3}}
+            style={{ fontFamily: "'Anton', sans-serif" }}
             className='lg:text-6xl text-3xl font-extrabold uppercase text-center text-white'>AFWN2025 Entry & Ticket Purchase</motion.h2>
         
         <motion.h3 

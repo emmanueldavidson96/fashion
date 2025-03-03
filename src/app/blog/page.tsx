@@ -13,7 +13,7 @@ export default function page() {
     <div className='bg-black w-screen h-fit'>
         <Header />
         <div className='flex flex-col gap-5 py-24 h-fit lg:w-[70%] mx-auto mt-16 max-lg:px-6'>
-            <h2 className='text-white uppercase font-bold text-2xl lg:text-5xl'>Blogs</h2>
+            <h2 className='text-white uppercase font-bold text-2xl lg:text-5xl' style={{ fontFamily: "'Anton', sans-serif" }}>Blogs</h2>
             <div className='mt-8 flex flex-col gap-8 '>
                 
                 <motion.div
@@ -30,8 +30,8 @@ export default function page() {
                     />
 
                     <div className='flex flex-col gap-4 w-[45%] max-lg:w-full'>
-                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase'>Africa Fashion Week Partners with Manchester Metropolitan University to Globalize Nigerian Adire Textiles</h2>
-                        <p className='text-white text-sm leading-10 '>
+                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase' style={{ fontFamily: "'Anton', sans-serif" }}>Africa Fashion Week Partners with Manchester Metropolitan University to Globalize Nigerian Adire Textiles</h2>
+                        <p className='text-white text-base leading-10 '>
                             Africa Fashion Week London (AFWL), a leader in showcasing African fashion on the global stage, 
                             has partnered with Manchester Metropolitan University to elevate Nigerian Adire textiles to new heights. 
                             This collaboration, which includes Queen Ronke Ademiluyi-Ogunwusi's Adire Hub Nigeria, underscores the commitment to blending rich 
@@ -55,8 +55,8 @@ export default function page() {
                     />
 
                     <div className='flex flex-col gap-4 w-[45%] max-lg:w-full'>
-                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase'>How Adire Oodua Textile Hub is Empowering Obafemi Awolowo University Students with Valuable Opportunities</h2>
-                        <p className='text-white text-sm leading-10'>
+                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase' style={{ fontFamily: "'Anton', sans-serif" }}>How Adire Oodua Textile Hub is Empowering Obafemi Awolowo University Students with Valuable Opportunities</h2>
+                        <p className='text-white text-base leading-10'>
                         The Adire Oodua Textile Hub continues to redefine the future of African fashion by equipping young 
                         creative entrepreneurs with practical skills and opportunities to excel in the African textiles industry. 
                         Recently, a group of students from Obafemi Awolowo University (OAU) 
@@ -82,8 +82,8 @@ export default function page() {
                     />
 
                     <div className='flex flex-col gap-4 w-[45%] max-lg:w-full'>
-                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase'>The Global Rise of Adire Textiles in African Fashion</h2>
-                        <p className='text-white text-sm leading-10'>
+                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase' style={{ fontFamily: "'Anton', sans-serif" }}>The Global Rise of Adire Textiles in African Fashion</h2>
+                        <p className='text-white text-base leading-10'>
                         In the world of African fashion, Adire textiles have emerged as a cultural icon and a symbol of heritage,
                          creativity, and innovation. Originating from Nigeria, Adire—which means “tied and dyed” in Yoruba—is a centuries-old textile art that continues to captivate global audiences. Its bold patterns, vibrant colors, 
                         and intricate designs have transformed it from a traditional craft into a sought-after material in modern fashion.
@@ -107,8 +107,8 @@ export default function page() {
                     />
 
                     <div className='flex flex-col gap-4 w-[45%] max-lg:w-full'>
-                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase'>How Africa Fashion Week Empowers Emerging Designers</h2>
-                        <p className='text-white text-sm leading-10'>
+                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase' style={{ fontFamily: "'Anton', sans-serif" }}>How Africa Fashion Week Empowers Emerging Designers</h2>
+                        <p className='text-white text-base leading-10'>
                         In the competitive world of fashion, emerging designers often struggle to gain recognition and access to resources. 
                         Africa Fashion Week (AFW) is changing that narrative by serving as a powerful platform for African creative entrepreneurs 
                         and designers to showcase their talents on both local and global stages.
@@ -133,8 +133,8 @@ export default function page() {
                     />
 
                     <div className='flex flex-col gap-4 w-[45%] max-lg:w-full'>
-                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase'>10 Must-Know Nigerian Textile Innovations Changing Global Fashion</h2>
-                        <p className='text-white text-sm leading-10'>
+                        <h2 className='text-white lg:text-2xl text-lg font-semibold uppercase' style={{ fontFamily: "'Anton', sans-serif" }}>10 Must-Know Nigerian Textile Innovations Changing Global Fashion</h2>
+                        <p className='text-white text-base leading-10'>
                         Nigerian textiles have long been celebrated for their beauty, diversity, and cultural significance.
                          In recent years, innovations in textile design and production have positioned Nigeria as a global leader in fashion. 
                          Here are 10 must-know Nigerian 
