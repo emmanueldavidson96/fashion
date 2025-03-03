@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Anton } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 
-const montserrat = Montserrat({subsets:["latin"]});
+const anton = Anton({weight:"400", subsets:["latin"]});
 
 export const metadata: Metadata = {
   title: "African Fashion Week Nigeria",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} bg-black antialiased overflow-x-hidden`}
+        className={`${anton.className} bg-black antialiased overflow-x-hidden`}
       >
         {children}
         <ToastContainer 
