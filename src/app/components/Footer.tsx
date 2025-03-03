@@ -27,7 +27,7 @@ export default function Footer() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 w-[45%] max-md:w-full h-full'>
-                <h3 className='lg:text-4xl text-lg uppercase font-extrabold text-white'>STAY UPDATED, JOIN OUR MAILING LIST</h3>
+                <h3 className='lg:text-4xl text-lg uppercase font-extrabold text-white' style={{ fontFamily: "'Anton', sans-serif" }}>STAY UPDATED, JOIN OUR MAILING LIST</h3>
                 <p className='max-lg:text-sm text-white'>Sign up to be the first to find out when we add new events and share African Fashion Week Nigeria news and more.</p>
                 <p className='max-lg:text-sm text-white'>We respect your privacy and will never share your information with third-party vendors.</p>
             </motion.div>
@@ -48,7 +48,7 @@ export default function Footer() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 max-md:w-full'>
-                <h3 className='md:text-4xl text-xl uppercase text-white font-bold'>Support</h3>
+                <h3 className='md:text-4xl text-xl uppercase text-white font-bold' style={{ fontFamily: "'Anton', sans-serif" }}>Support</h3>
                 <p className='d:text-base text-sm text-white'>Terms and Conditions</p>
                 <p className='d:text-base text-sm text-white'>Privacy Policy</p>
                 <p className='d:text-base text-sm text-white'>FAQs</p>
@@ -64,8 +64,8 @@ export default function Footer() {
                     src={logoImage}
                     alt=''
                     className='lg:w-[150px] w-[80px] h-auto bg-cover '
-                />
-                <h2 className='uppercase font-bold text-base lg:text-3xl text-white'>African Fashion Week Nigeria</h2>
+                /> 
+                <h2 className='uppercase font-bold text-base lg:text-3xl text-white' style={{ fontFamily: "'Anton', sans-serif" }}>African Fashion Week Nigeria</h2>
             </motion.div>
 
             
@@ -75,7 +75,7 @@ export default function Footer() {
                 whileInView={"show"}
                 viewport={{once:false, amount:0.3}} 
                 className='flex flex-col gap-4 max-md:w-full' >
-                <h3 className='md:text-4xl text-xl uppercase text-white font-bold'>Contact</h3>
+                <h3 className='md:text-4xl text-xl uppercase text-white font-bold' style={{ fontFamily: "'Anton', sans-serif" }}>Contact</h3>
                 <Link href={"/contact-us"} className='d:text-base text-sm text-white cursor-pointer'>Contact Us</Link>
                 <Link href={"/press-media-pass"} className='d:text-base text-sm text-white cursor-pointer' >Press </Link>
                 
