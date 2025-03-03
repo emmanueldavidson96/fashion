@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Anton } from "next/font/google";
+import { Anton, Sawarabi_Gothic } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 
 const anton = Anton({weight:"400", subsets:["latin"]});
+const sawarabi = Sawarabi_Gothic({subsets:["latin"], weight:"400"});
 
 export const metadata: Metadata = {
   title: "African Fashion Week Nigeria",
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anton.className} bg-black antialiased overflow-x-hidden`}
+        className={`${sawarabi.className} bg-black antialiased overflow-x-hidden `}
       >
         {children}
         <ToastContainer 
