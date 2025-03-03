@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../lib/variants';
 
 const gallery2024 = [
     {
@@ -208,13 +210,18 @@ export default function page() {
                 {
                     galleryImg === "runway" && gallery2024[0].imageFiles.map((gallery, index) => {
                         return (
-                            <div className='lg:w-[23%] w-[46%] h-[500px] max-lg:h-[350px] overflow-hidden' key={index}>
+                            <motion.div 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='lg:w-[23%] w-[46%] h-[500px] max-lg:h-[350px] overflow-hidden' key={index}>
                                 <img
                                     src={gallery.img}
                                     alt=''
                                     className='w-full h-full object-cover hover:scale-150 duration-500 transition-all '
                                 />
-                            </div>
+                            </motion.div>
                         )
                     })
                 }
@@ -222,13 +229,18 @@ export default function page() {
                 {
                     galleryImg === "guests" && gallery2024[1].imageFiles.map((gallery, index) => {
                         return (
-                            <div className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
+                            <motion.div 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}}  
+                                className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
                                 <img
                                     src={gallery.img}
                                     alt=''
                                     className='w-full h-full object-cover hover:scale-125 duration-500 transition-all '
                                 />
-                            </div>
+                            </motion.div>
                         )
                     })
                 } 
@@ -236,13 +248,18 @@ export default function page() {
                 {
                     galleryImg === "backstage" && gallery2024[2].imageFiles.map((gallery, index) => {
                         return (
-                            <div className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
+                            <motion.div 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}}  
+                                className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
                                 <img
                                     src={gallery.img}
                                     alt=''
                                     className='w-full h-full object-cover hover:scale-125 duration-500 transition-all '
                                 />
-                            </div>
+                            </motion.div>
                         )
                     })
                 } 
@@ -250,13 +267,18 @@ export default function page() {
                 {
                     galleryImg === "exhibition" && gallery2024[3].imageFiles.map((gallery, index) => {
                         return (
-                            <div className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
+                            <motion.div 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}}  
+                                className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
                                 <img
                                     src={gallery.img}
                                     alt=''
                                     className='w-full h-full object-cover hover:scale-125 duration-500 transition-all '
                                 />
-                            </div>
+                            </motion.div>
                         )
                     })
                 } 
@@ -264,13 +286,18 @@ export default function page() {
                 {
                     galleryImg === "fitting" && gallery2024[4].imageFiles.map((gallery, index) => {
                         return (
-                            <div className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
+                            <motion.div 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}}  
+                                className='lg:w-[32%] w-[100%]  h-[400px] max-lg:h-[350px] overflow-hidden' key={index}>
                                 <img
                                     src={gallery.img}
                                     alt=''
                                     className='w-full h-full object-cover hover:scale-125 duration-500 transition-all '
                                 />
-                            </div>
+                            </motion.div>
                         )
                     })
                 }             

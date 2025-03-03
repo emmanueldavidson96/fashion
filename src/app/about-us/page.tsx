@@ -1,6 +1,9 @@
+"use client";
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../../lib/variants'
 
 export default function page() {
   return (
@@ -10,7 +13,13 @@ export default function page() {
 
         <div className='w-full flex items-center justify-center h-fit bg-black py-24 mt-[80px]'>
             <div className='bg-black h-fit flex max-lg:flex-col-reverse max-lg:gap-6 justify-between w-[90%] mx-auto '>
-                <div className='flex flex-col gap-5 lg:w-[45%] w-full '>
+                <motion.div     
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='flex flex-col gap-5 lg:w-[45%] w-full '
+                >
                     <h2 className='lg:text-7xl text-3xl text-white font-black'>About</h2>
                     <p className='text-white leading-8 text-sm lg:text-base'>
                     In 2011, African Fashion Week London was created by Queen Ronke Ademiluyi-Ogunwusi to increase the visibility, 
@@ -28,15 +37,21 @@ export default function page() {
                     <p className='text-white leading-8 text-sm lg:text-base'>
                     We have hosted 1700 emerging designers and exhibitors from across the globe including Africa, Europe and America to 90,000 visitors including buyers, retailers and industry professionals.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className='lg:w-[45%] w-full h-fit flex items-center justify-center'>
+                <motion.div  
+                    variants={fadeIn("up", 0.6)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='lg:w-[45%] w-full h-fit flex items-center justify-center'
+                >
                     <img 
                         src={'https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740539471/Queen_Ronke_by_Photographer_Kelechi_Amadi_Obi_trsxqg.jpg'}
                         alt=''
                         className='lg:w-[70%] w-[85%] h-auto object-cover'
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
         
@@ -45,14 +60,25 @@ export default function page() {
         {/* What Sets Us Apart */}
         <div className='w-full flex items-center justify-center h-fit bg-white py-24'>
             <div className='bg-white h-fit flex justify-between w-[90%] mx-auto max-lg:flex-col max-lg:gap-6'>
-                <div className='lg:w-[45%] w-full h-fit flex items-center justify-center'>
+                <motion.div 
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='lg:w-[45%] w-full h-fit flex items-center justify-center'
+                >
                     <img 
                         src={'https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740071811/IMG_8909-Pano_1_er4nv4.jpg'}
                         alt=''
                         className='w-[100%] h-auto object-cover'
                     />
-                </div>
-                <div className='flex flex-col gap-5 lg:w-[45%] w-full'>
+                </motion.div>
+                <motion.div 
+                    variants={fadeIn("up", 0.6)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='flex flex-col gap-5 lg:w-[45%] w-full'>
                     <h2 className='lg:text-5xl text-2xl text-black font-black'>What Sets Us Apart</h2>
                     <p className='text-black leading-8 text-sm lg:text-base'>
                     Africa Fashion Week Nigeria is seen as the beacon of African fashion and design outside the African continent.  We highlight and nurture sustainability, social enterprise and entrepreneurship through international visibility. 
@@ -63,14 +89,19 @@ export default function page() {
                     <p className='text-black leading-8 text-sm lg:text-base'>
                     Over the past 15 years we have built a significant track record in working collaboratively with the African Diaspora.
                     </p>                
-                </div>
+                </motion.div>
             </div>
         </div>
 
         {/* Who We Represent */}
         <div className='w-full flex items-center justify-center h-fit bg-black py-24'>
             <div className='bg-black h-fit flex justify-between w-[90%] mx-auto max-lg:flex-col-reverse max-lg:gap-8'>
-                <div className='flex flex-col gap-5 lg:w-[45%] w-full'>
+                <motion.div 
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='flex flex-col gap-5 lg:w-[45%] w-full'>
                     <h2 className='lg:text-5xl text-2xl text-white font-black'>Who We Represent</h2>
                     <p className='text-white leading-8 text-sm lg:text-base'>
                     Our primary market is emerging African heritage designers and SMEs who are typically ignored by the major fashion events and, if not, are tokenised. 
@@ -81,14 +112,19 @@ export default function page() {
                     <p className='text-white leading-8 text-sm lg:text-base'>
                     Similarly, we make sure 90% of our workforce is made up of POC, fashion students and marginalised communities, giving the experience of working for a major fashion showcasing event.
                     </p>                
-                </div>
-                <div className='lg:w-[45%] w-full h-fit flex items-center justify-center'>
+                </motion.div>
+                <motion.div 
+                    variants={fadeIn("up", 0.6)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
+                    className='lg:w-[45%] w-full h-fit flex items-center justify-center'>
                     <img 
                         src={'https://res.cloudinary.com/dyn1k6wcl/image/upload/v1739432997/IMG_5046_nhm8tb.jpg'}
                         alt=''
                         className='w-[100%] h-auto object-cover'
                     />
-                </div>
+                </motion.div>
             </div>
         </div>
 

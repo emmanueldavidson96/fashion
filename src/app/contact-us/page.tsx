@@ -5,6 +5,8 @@ import { MdQuestionAnswer } from "react-icons/md";
 import Header from '../components/Header';
 import { base_afwn_contacts } from '../../../api/base';
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../lib/variants';
 
 export default function page() {
   const [Name, setBrandName] = useState("");
@@ -43,7 +45,12 @@ export default function page() {
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent"></div>
 
         {/* Content Wrapper */}
-        <div className="absolute bottom-[20%] max-lg:bottom-[5%] left-10 lg:left-[20%] text-left max-w-[80%] lg:max-w-[70%] flex max-lg:flex-col gap-12 items-start">
+        <motion.div 
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false, amount:0.3}} 
+          className="absolute bottom-[20%] max-lg:bottom-[5%] left-10 lg:left-[20%] text-left max-w-[80%] lg:max-w-[70%] flex max-lg:flex-col gap-12 items-start">
           <form className='flex flex-col gap-3 max-lg:gap-1 w-[50%] max-lg:w-full' onSubmit={handle_submit}>
             <label className='text-4xl max-lg:text-xl text-green-500 uppercase font-bold tracking-widest'>Contact Us</label>
             <input type="text" className='text-white w-full border-b border-white bg-transparent p-3 max-lg:p-2' onChange={(e) => setBrandName(e.target.value)} placeholder='Name' />            
@@ -75,7 +82,7 @@ export default function page() {
             <h3 className='text-white text-lg mt-8 max-lg:mt-3 max-lg:text-sm' >Simply send us an email anytime you want. We are open to all suggestions, ideas and partnerships from all.</h3>
           </div> 
           
-        </div>
+        </motion.div>
       </section>
     </div>
   )

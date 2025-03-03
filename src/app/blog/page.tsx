@@ -3,6 +3,9 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../lib/variants';
+
 
 export default function page() {
     const router = useRouter();
@@ -13,12 +16,16 @@ export default function page() {
             <h2 className='text-white uppercase font-bold text-2xl lg:text-5xl'>Blogs</h2>
             <div className='mt-8 flex flex-col gap-8 '>
                 
-                <div 
+                <motion.div
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}}  
                     onClick={() => router.push("/blog/africa-fashion-week-partners-with-manchester-metropolitan-university-to-globalize-nigerian-adire-textiles")}                
                 className='flex max-lg:flex-col max-lg:gap-6 items-center w-full justify-between border-b border-white pb-12 cursor-pointer'>
                     <img 
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740827117/facilities-buildings-rooms-spaces-tile-1_ccarfc.jpg'
-                        className='lg:w-[35%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
+                        className='lg:w-[45%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
                         alt=''
                     />
 
@@ -32,14 +39,18 @@ export default function page() {
                         </p>
                         <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
-                </div>
+                </motion.div>
 
-                <div
+                <motion.div
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
                     onClick={() => router.push("/blog/how-adire-oodua-textile-hub-is-empowering-obafemi-awolowo-university-students-with-valuable-opportunities")}
                     className='flex max-lg:flex-col max-lg:gap-6 items-center w-full justify-between py-12 border-b cursor-pointer border-white'>
                     <img                         
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740827673/1323758975_e60u0w.jpg'
-                        className='lg:w-[35%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
+                        className='lg:w-[45%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
                         alt=''
                     />
 
@@ -53,16 +64,20 @@ export default function page() {
                         </p>
                         <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
-                </div>
+                </motion.div>
 
 
-                <div 
+                <motion.div 
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
                     onClick={() => router.push("/blog/the-global-rise-of-adire-textiles-in-african-fashion")}                
                     className='flex max-lg:flex-col max-lg:gap-6 items-center w-full justify-between py-12 cursor-pointer border-b border-white'
                 >                
                     <img 
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740827950/773034387_i8wfyt.jpg'
-                        className='lg:w-[35%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
+                        className='lg:w-[45%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
                         alt=''
                     />
 
@@ -75,15 +90,19 @@ export default function page() {
                         </p>
                         <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
-                </div>
+                </motion.div>
 
 
-                <div 
+                <motion.div 
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
                     onClick={() => router.push("/blog/how-africa-fashion-week-empowers-emerging-designers")}                
                     className='flex max-lg:flex-col max-lg:gap-6 items-center w-full justify-between py-12 border-b cursor-pointer border-white'>
                     <img 
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740828202/IMG_0528_lvuk1g.jpg'
-                        className='lg:w-[35%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
+                        className='lg:w-[45%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
                         alt=''
                     />
 
@@ -97,15 +116,19 @@ export default function page() {
                         <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
                     
-                </div>
+                </motion.div>
 
 
-                <div
+                <motion.div
+                    variants={fadeIn("up", 0.4)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{once:false, amount:0.3}} 
                     onClick={() => router.push("/blog/10-must-know-nigerian-textile-innovations-changing-global-fashion")}
                     className='flex max-lg:flex-col max-lg:gap-6 items-center w-full justify-between py-12 cursor-pointer'>
                     <img 
                         src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740828409/-1197161080_u4lrym.jpg'
-                        className='lg:w-[35%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
+                        className='lg:w-[45%] w-full h-auto object-cover rounded-xl overflow-hidden hover:scale-105 duration-500 transition-all'
                         alt=''
                     />
 
@@ -119,7 +142,7 @@ export default function page() {
                         </p>
                         <button className='text-white bg-green-500 w-fit h-fit px-8 py-3 text-sm'>Read More</button>
                     </div>
-                </div>
+                </motion.div>
 
             </div>
         </div>
