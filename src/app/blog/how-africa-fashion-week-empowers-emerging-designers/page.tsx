@@ -13,7 +13,7 @@ export default function page() {
                     className='w-screen h-auto'
                 />
                 <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 px-12 pt-36 absolute opacity-80 w-full'>
-                    <h2 className='text-white text-5xl font-semibold capitalize max-lg:text-2xl'>How Africa Fashion Week Empowers Emerging Designers</h2>
+                    <h2 className='text-white text-5xl font-semibold capitalize max-lg:text-2xl' style={{ fontFamily: "'Anton', sans-serif" }}>How Africa Fashion Week Empowers Emerging Designers</h2>
                     <p className='text-white text-lg tracking-widest'>March 1, 2025</p>                
                 </div>
             </div>
@@ -23,7 +23,7 @@ export default function page() {
                     platform for African creative entrepreneurs and designers to 
                     showcase their talents on both local and global stages.
                 </p>
-                <h2 className='text-lg font-semibold text-black'>A Launchpad for Talent</h2>
+                <h2 className='text-lg font-semibold text-black' style={{ fontFamily: "'Anton', sans-serif" }}>A Launchpad for Talent</h2>
                 <p className='text-black text-base'>
                     Since its inception, Africa Fashion Week has been committed to discovering and promoting the next generation of African fashion talents. 
                     By providing a stage for designers to present their work, AFW offers them an invaluable 
@@ -39,7 +39,7 @@ export default function page() {
                     src='https://res.cloudinary.com/dyn1k6wcl/image/upload/v1740828202/IMG_0503_jsawo7.jpg'
                     className='w-[60%] max-lg:w-full h-auto'
                 />
-                <h2 className='text-lg font-semibold text-black'>Building a Community</h2>
+                <h2 className='text-lg font-semibold text-black' style={{ fontFamily: "'Anton', sans-serif" }}>Building a Community</h2>
                 <p className='text-black text-base'>
                     One of the unique aspects of Africa Fashion Week is its ability to foster a sense of community among designers, 
                     artisans, and other stakeholders. Events like Lagos Fashion Week and Africa Fashion Week 
@@ -50,7 +50,7 @@ export default function page() {
                     This sense of community is particularly beneficial for emerging designers, who often lack access to the networks and partnerships that are crucial for success. 
                     By connecting them with established names in the industry, AFW helps bridge the gap between potential and opportunity.
                 </p>
-                <h2 className='text-lg font-semibold text-black'>Empowering Through Education</h2>
+                <h2 className='text-lg font-semibold text-black' style={{ fontFamily: "'Anton', sans-serif" }}>Empowering Through Education</h2>
                 <p className='text-black text-base'>
                     Africa Fashion Week's commitment to empowering designers goes beyond the runway. 
                     Through workshops, seminars, and masterclasses, AFW provides emerging designers with 
@@ -58,7 +58,7 @@ export default function page() {
                     sustainable fashion, digital marketing, and brand building are frequently covered, 
                     equipping designers to navigate the complexities of the modern fashion landscape.
                 </p>
-                <h2 className='text-lg font-semibold text-black'>A Catalyst for Change</h2>
+                <h2 className='text-lg font-semibold text-black' style={{ fontFamily: "'Anton', sans-serif" }}>A Catalyst for Change</h2>
                 <p className='text-black text-base'>
                     By focusing on emerging designers, Africa Fashion Week is not only shaping the future of African fashion but 
                     also contributing to the continent's economic development. The platform creates jobs, supports local artisans, 

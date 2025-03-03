@@ -25,7 +25,7 @@ export default function Banner() {
       <div className="absolute bottom-[40%] left-10 lg:left-24 text-left max-w-[80%] lg:max-w-[900px] flex flex-col gap-6 items-start">
         {/* Title Section */}
         <motion.div
-          className="relative text-white uppercase font-extrabold flex flex-col gap-8 text-[12vw] md:text-[5em] tracking-widest"
+          className="relative text-white uppercase font-extrabold flex flex-col gap-8 leading-[4rem] text-[12vw] md:text-[5em] tracking-widest"
           style={{ fontFamily: "'Anton', sans-serif" }}
         >
             <Image 
@@ -38,7 +38,7 @@ export default function Banner() {
               initial="hidden"
               whileInView={"show"}
               viewport={{once:false, amount:0.3}}
-              className="text-2xl lg:text-5xl font-extrabold text-white uppercase lg:leading-[4rem]">
+              className="text-3xl lg:text-5xl font-extrabold text-white uppercase lg:leading-[3rem]">
                 The World's Largest & Longest-Running Showcase of African Design.  
             </motion.h2>     
 

@@ -122,7 +122,8 @@ function Header() {
                 initial="visible"
                 whileInView={"show"}
                 viewport={{once:false, amount:0.3}}
-                className="text-2xl max-lg:w-[320px] max-lg:text-center lg:ml-[-150px] md:text-3xl text-white font-black uppercase tracking-wider">Africa Fashion Week Nigeria</motion.h1>
+                style={{ fontFamily: "'Anton', sans-serif" }}
+                className="text-3xl max-lg:w-[320px] max-lg:text-center lg:ml-[-150px] md:text-3xl text-white font-black uppercase tracking-wider">Africa Fashion Week Nigeria</motion.h1>
         </Link>   
 
         {/* Right Navigation */}
@@ -170,7 +171,8 @@ function Header() {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}}
-                            className="text-2xl max-lg:w-[320px] max-lg:text-center md:text-3xl text-black font-black uppercase tracking-wider"
+                            style={{ fontFamily: "'Anton', sans-serif" }}
+                            className="text-3xl max-lg:w-[320px] max-lg:text-center md:text-3xl text-black font-black uppercase tracking-wider"
                         >Africa Fashion Week Nigeria</motion.h1>
                     </Link>   
 
@@ -182,66 +184,91 @@ function Header() {
 
                 {
                     normalNav && 
-                    <div className='flex flex-col gap-10'>
+                    <div className='flex flex-col gap-5'>
                         <motion.p 
                             variants={fadeIn("up", 0.4)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
-                            className='text-5xl max-lg:text-xl text-black cursor-pointer font-light flex gap-8 items-center' onClick={() => {setApplyNav(!applyNav); setNormalNav(false)}}>Apply <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-4xl text-black cursor-pointer font-light flex gap-8 items-center uppercase' onClick={() => {setApplyNav(!applyNav); setNormalNav(false)}}>Apply <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/blog")}
-                            className='text-5xl max-lg:text-xl text-black cursor-pointer font-light flex gap-8 items-center' >Blog <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-4xl uppercase text-black cursor-pointer font-light flex gap-8 items-center' >Blog <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/afwn-2024-gallery")}
-                            className='text-5xl max-lg:text-xl text-black font-light flex cursor-pointer gap-8 items-center'>Gallery <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-4xl uppercase text-black font-light flex cursor-pointer gap-8 items-center'>Gallery <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/about-us")}
-                            className='text-5xl max-lg:text-xl cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-4xl uppercase cursor-pointer text-black font-light flex gap-8 items-center'>About <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         <motion.p 
                             variants={fadeIn("up", 0.6)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once:false, amount:0.3}} 
                             onClick={() => router.push("/contact-us")}
-                            className='text-5xl max-lg:text-xl text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
+                            className='text-5xl max-lg:text-4xl uppercase text-black font-light flex cursor-pointer gap-8 items-center'>Contact Us <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                     </div>
                 }
                 {
                     applyNav && 
-                    <div className='flex flex-col gap-5 items-start overflow-y-scroll '>
-                        <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center' 
+                    <div className='flex flex-col gap-5 items-start overflow-y-hidden '>
+                        <p className='text-xl cursor-pointer text-gray-600 font-light flex gap-8 items-center ' 
                             onClick={() =>{setNormalNav(true);setApplyNav(false)}}
                         >
                             Back
                         </p>
                         
                         <Link href={"/register-to-attend"}>
-                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Register to Attend <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <motion.p 
+                                variants={fadeIn("up", 0.2)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='text-xl max-lg:text-3xl cursor-pointer text-black font-light flex gap-5 items-center'>Register to Attend <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         </Link>
                         <Link href={"/designer-exhibitor-form"}>
-                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Designer/Exhibitor Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <motion.p 
+                                variants={fadeIn("up", 0.4)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='text-xl max-lg:text-3xl cursor-pointer text-black font-light flex gap-5 items-center'>Designer/Exhibitor Application <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         </Link>
                         <Link href={"/emerging-fashion-designers-application"}>
-                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-4 items-center'>Emerging Designers Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <motion.p 
+                                variants={fadeIn("up", 0.6)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='text-xl max-lg:text-3xl cursor-pointer text-black font-light flex gap-4 items-center'>Emerging Designers Application <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         </Link>
                         <Link href={"/partnership-application"}>
-                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Sponsorship/Partnership Application <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <motion.p 
+                                variants={fadeIn("up", 0.6)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='text-xl max-lg:text-3xl cursor-pointer text-black font-light flex gap-5 items-center'>Sponsorship/Partnership Application <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         </Link>
                         <Link href={"/press-media-pass"}>
-                            <p className='text-xl max-lg:text-lg cursor-pointer text-black font-light flex gap-8 items-center'>Press Accreditation <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
+                            <motion.p 
+                                variants={fadeIn("up", 0.6)}
+                                initial="hidden"
+                                whileInView={"show"}
+                                viewport={{once:false, amount:0.3}} 
+                                className='text-xl max-lg:text-3xl cursor-pointer text-black font-light flex gap-5 items-center'>Press Accreditation <MdOutlineArrowForwardIos size={30} className='text-black'/></motion.p>
                         </Link>
                         {/* <Link href={"/agency-form"}>
                             <p className='text-xl cursor-pointer text-black font-light flex gap-8 items-center'>Agency <MdOutlineArrowForwardIos size={30} className='text-black'/></p>
@@ -274,7 +301,7 @@ function Header() {
                 </motion.div>
                 
 
-                <p className='flex gap-4 items-center bg-black w-fit px-6 py-3'>
+                <p className='flex gap-4 items-center bg-black w-fit px-6 py-3 max-lg:mt-[-50px]'>
                     <button onClick={() => router.push("/register-to-attend")} className='text-white text-sm hover:text-green-500'>Register to Attend</button>
                 </p>
 

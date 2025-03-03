@@ -13,7 +13,7 @@ export default function page() {
                     className='w-screen h-auto'
                 />
                 <div className='flex flex-col gap-5 bg-black top-0 left-0 bottom-0 px-12 pt-36 absolute opacity-80 w-full'>
-                    <h2 className='text-white text-5xl max-lg:text-2xl font-semibold capitalize '>africa fashion week partners with manchester metropolitan university to globalize nigerian adire textiles</h2>
+                    <h2 className='text-white text-5xl max-lg:text-2xl font-semibold capitalize ' style={{ fontFamily: "'Anton', sans-serif" }}>africa fashion week partners with manchester metropolitan university to globalize nigerian adire textiles</h2>
                     <p className='text-white text-lg tracking-widest'>March 1, 2025</p>                
                 </div>
             </div>
